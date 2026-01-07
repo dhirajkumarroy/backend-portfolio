@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhiraj Kumar | Backend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">Dhiraj Kumar</div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="fade-in">Dhiraj Kumar</h1>
+          <div class="hero-subtitle fade-in delay-1">
+            <span class="code-font"
+              >Backend Engineer • Java • Spring Boot • Node.js</span
+            >
+          </div>
+          <p class="hero-description fade-in delay-2">
+            I architect
+            <span class="highlight"
+              >high-performance, scalable backend systems</span
+            >
+            using Java/Spring Boot and Node.js/Express. Specializing in REST
+            APIs, microservices, and database optimization for enterprise
+            applications.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary fade-in delay-3">
+              <i class="fas fa-rocket"></i> View Projects
+            </a>
+            <a
+              href="https://github.com/dhirajkumarroy"
+              target="_blank"
+              class="btn btn-secondary fade-in delay-4"
+            >
+              <i class="fab fa-github"></i> GitHub Profile
+            </a>
+            <a href="#contact" class="btn btn-secondary fade-in delay-5">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-shapes">
+          <div class="shape"></div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item fade-in">
+            <div class="stat-number" data-count="8">0</div>
+            <div class="stat-label">Production Projects</div>
+          </div>
+          <div class="stat-item fade-in delay-1">
+            <div class="stat-number" data-count="99.9">0</div>
+            <div class="stat-label">Uptime %</div>
+          </div>
+          <div class="stat-item fade-in delay-2">
+            <div class="stat-number" data-count="30">0+</div>
+            <div class="stat-label">APIs Built</div>
+          </div>
+          <div class="stat-item fade-in delay-3">
+            <div class="stat-number" data-count="3">0+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SLIDER SECTION -->
+    <section id="skills" class="skills-section container">
+      <div class="skills-header">
+        <h2 class="fade-in">Technical Stack</h2>
+        <div class="slider-nav fade-in delay-1">
+          <button
+            class="slider-btn"
+            id="skillsPrevBtn"
+            aria-label="Previous skills"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button
+            class="slider-btn"
+            id="skillsNextBtn"
+            aria-label="Next skills"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="skills-slider-container">
+        <div class="skills-slider" id="skillsSlider">
+          <!-- Skill Slide 1 -->
+          <div class="skill-slide fade-in">
+            <div class="skill-slide-icon"><i class="fab fa-java"></i></div>
+            <h3 class="skill-slide-name">Java</h3>
+            <p class="skill-slide-description">
+              Core Java, Collections, Multithreading, Stream API, Design
+              Patterns
+            </p>
+            <div class="skill-slide-level">
+              <div class="skill-level-bar-container">
+                <div class="skill-level-bar" data-level="95"></div>
+              </div>
+              <div class="skill-level-percent">95%</div>
+            </div>
+          </div>
+
+          <!-- Skill Slide 2 -->
+          <div class="skill-slide fade-in delay-1">
+            <div class="skill-slide-icon"><i class="fas fa-server"></i></div>
+            <h3 class="skill-slide-name">Spring Boot</h3>
+            <p class="skill-slide-description">
+              Microservices, REST APIs, Security, Data JPA, Spring Cloud
+            </p>
+            <div class="skill-slide-level">
+              <div class="skill-level-bar-container">
+                <div class="skill-level-bar" data-level="92"></div>
+              </div>
+              <div class="skill-level-percent">92%</div>
+            </div>
+          </div>
+
+          <!-- Skill Slide 3 -->
+          <div class="skill-slide fade-in delay-2">
+            <div class="skill-slide-icon"><i class="fab fa-node-js"></i></div>
+            <h3 class="skill-slide-name">Node.js</h3>
+            <p class="skill-slide-description">
+              Express.js, REST APIs, Authentication, Middleware, NPM
+            </p>
+            <div class="skill-slide-level">
+              <div class="skill-level-bar-container">
+                <div class="skill-level-bar" data-level="88"></div>
+              </div>
+              <div class="skill-level-percent">88%</div>
+            </div>
+          </div>
+
+          <!-- Skill Slide 4 -->
+          <div class="skill-slide fade-in delay-3">
+            <div class="skill-slide-icon"><i class="fas fa-database"></i></div>
+            <h3 class="skill-slide-name">Database</h3>
+            <p class="skill-slide-description">
+              MySQL, MongoDB, PostgreSQL, Redis, Query Optimization
+            </p>
+            <div class="skill-slide-level">
+              <div class="skill-level-bar-container">
+                <div class="skill-level-bar" data-level="90"></div>
+              </div>
+              <div class="skill-level-percent">90%</div>
+            </div>
+          </div>
+
+          <!-- Skill Slide 5 -->
+          <div class="skill-slide fade-in delay-4">
+            <div class="skill-slide-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="skill-slide-name">Security</h3>
+            <p class="skill-slide-description">
+              JWT, OAuth2, Spring Security, Encryption, HTTPS
+            </p>
+            <div class="skill-slide-level">
+              <div class="skill-level-bar-container">
+                <div class="skill-level-bar" data-level="85"></div>
+              </div>
+              <div class="skill-level-percent">85%</div>
+            </div>
+          </div>
+
+          <!-- Skill Slide 6 -->
+          <div class="skill-slide fade-in delay-5">
+            <div class="skill-slide-icon"><i class="fas fa-cloud"></i></div>
+            <h3 class="skill-slide-name">Cloud & DevOps</h3>
+            <p class="skill-slide-description">
+              AWS, Docker, Git, CI/CD, RESTful APIs, Load Balancing
+            </p>
+            <div class="skill-slide-level">
+              <div class="skill-level-bar-container">
+                <div class="skill-level-bar" data-level="80"></div>
+              </div>
+              <div class="skill-level-percent">80%</div>
+            </div>
+          </div>
+
+          <!-- Skill Slide 7 -->
+          <div class="skill-slide fade-in">
+            <div class="skill-slide-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3 class="skill-slide-name">Architecture</h3>
+            <p class="skill-slide-description">
+              Microservices, MVC, REST, Clean Architecture, DDD
+            </p>
+            <div class="skill-slide-level">
+              <div class="skill-level-bar-container">
+                <div class="skill-level-bar" data-level="87"></div>
+              </div>
+              <div class="skill-level-percent">87%</div>
+            </div>
+          </div>
+
+          <!-- Skill Slide 8 -->
+          <div class="skill-slide fade-in delay-1">
+            <div class="skill-slide-icon"><i class="fas fa-bolt"></i></div>
+            <h3 class="skill-slide-name">Performance</h3>
+            <p class="skill-slide-description">
+              Caching, Load balancing, Query Optimization, Async Processing
+            </p>
+            <div class="skill-slide-level">
+              <div class="skill-level-bar-container">
+                <div class="skill-level-bar" data-level="82"></div>
+              </div>
+              <div class="skill-level-percent">82%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-dots" id="skillsDots">
+        <!-- Dots will be generated by JavaScript -->
+      </div>
+    </section>
+
+    <!-- PROJECTS SLIDER SECTION -->
+    <section id="projects" class="projects-section container">
+      <div class="skills-header">
+        <h2 class="fade-in">Featured Projects</h2>
+        <div class="slider-nav fade-in delay-1">
+          <button
+            class="slider-btn"
+            id="projectsPrevBtn"
+            aria-label="Previous projects"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button
+            class="slider-btn"
+            id="projectsNextBtn"
+            aria-label="Next projects"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="projects-slider-container">
+        <div class="projects-slider" id="projectsSlider">
+          <!-- Project Slide 1 -->
+          <div class="project-slide fade-in">
+            <div class="project-slide-header">
+              <div>
+                <h3>E-Commerce Backend System</h3>
+                <p>Full-featured e-commerce platform with Java Spring Boot</p>
+              </div>
+              <div class="project-slide-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="project-slide-tech">
+              <span class="project-tech-tag">Spring Boot</span>
+              <span class="project-tech-tag">JWT</span>
+              <span class="project-tech-tag">MySQL</span>
+              <span class="project-tech-tag">Redis</span>
+              <span class="project-tech-tag">Docker</span>
+            </div>
+            <div class="project-slide-features">
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span
+                  >User authentication with JWT and role-based
+                  authorization</span
+                >
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Product catalog with search, filter, and pagination</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Shopping cart and order processing system</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Payment integration and invoice generation</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Redis caching for improved performance</span>
+              </div>
+            </div>
+            <div class="project-slide-links">
+              <a
+                href="https://github.com/dhirajkumarroy/ecommerce-backend"
+                target="_blank"
+                class="project-slide-link"
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="#" class="project-slide-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Slide 2 -->
+          <div class="project-slide fade-in delay-1">
+            <div class="project-slide-header">
+              <div>
+                <h3>Task Management API</h3>
+                <p>Node.js Express backend with real-time features</p>
+              </div>
+              <div class="project-slide-icon"><i class="fas fa-tasks"></i></div>
+            </div>
+            <div class="project-slide-tech">
+              <span class="project-tech-tag">Node.js</span>
+              <span class="project-tech-tag">Express</span>
+              <span class="project-tech-tag">MongoDB</span>
+              <span class="project-tech-tag">Socket.io</span>
+              <span class="project-tech-tag">JWT</span>
+            </div>
+            <div class="project-slide-features">
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>RESTful API with comprehensive CRUD operations</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Real-time updates using Socket.io</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>User authentication and authorization</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Task assignment, deadlines, and progress tracking</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>File uploads and notifications system</span>
+              </div>
+            </div>
+            <div class="project-slide-links">
+              <a
+                href="https://github.com/dhirajkumarroy/task-management-api"
+                target="_blank"
+                class="project-slide-link"
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="#" class="project-slide-link">
+                <i class="fas fa-book"></i> API Documentation
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Slide 3 -->
+          <div class="project-slide fade-in delay-2">
+            <div class="project-slide-header">
+              <div>
+                <h3>Authentication Service</h3>
+                <p>Secure authentication microservice with Spring Security</p>
+              </div>
+              <div class="project-slide-icon">
+                <i class="fas fa-user-shield"></i>
+              </div>
+            </div>
+            <div class="project-slide-tech">
+              <span class="project-tech-tag">Spring Security</span>
+              <span class="project-tech-tag">JWT</span>
+              <span class="project-tech-tag">OAuth2</span>
+              <span class="project-tech-tag">PostgreSQL</span>
+              <span class="project-tech-tag">Docker</span>
+            </div>
+            <div class="project-slide-features">
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Secure user registration and login with JWT tokens</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span
+                  >OAuth2 integration for social login (Google, GitHub)</span
+                >
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Email verification and password reset functionality</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Role-based access control (Admin, User, Moderator)</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Rate limiting and security headers implementation</span>
+              </div>
+            </div>
+            <div class="project-slide-links">
+              <a
+                href="https://github.com/dhirajkumarroy/auth-service"
+                target="_blank"
+                class="project-slide-link"
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="#" class="project-slide-link">
+                <i class="fas fa-shield-alt"></i> Security Details
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Slide 4 -->
+          <div class="project-slide fade-in delay-3">
+            <div class="project-slide-header">
+              <div>
+                <h3>API Gateway Service</h3>
+                <p>Centralized API gateway for microservices architecture</p>
+              </div>
+              <div class="project-slide-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+            </div>
+            <div class="project-slide-tech">
+              <span class="project-tech-tag">Spring Cloud Gateway</span>
+              <span class="project-tech-tag">OAuth2</span>
+              <span class="project-tech-tag">Redis</span>
+              <span class="project-tech-tag">Docker</span>
+              <span class="project-tech-tag">Kubernetes</span>
+            </div>
+            <div class="project-slide-features">
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Centralized routing for multiple microservices</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Rate limiting and circuit breaker implementation</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>JWT token validation and authentication</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Request/response logging and monitoring</span>
+              </div>
+              <div class="project-slide-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Load balancing across service instances</span>
+              </div>
+            </div>
+            <div class="project-slide-links">
+              <a
+                href="https://github.com/dhirajkumarroy/api-gateway"
+                target="_blank"
+                class="project-slide-link"
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="#" class="project-slide-link">
+                <i class="fas fa-book"></i> Documentation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-dots" id="projectsDots">
+        <!-- Dots will be generated by JavaScript -->
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container">
+      <h2 class="fade-in">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="fade-in">
+            I'm a passionate
+            <span class="highlight">Backend Engineer</span> with expertise in
+            both <span class="highlight">Java/Spring Boot</span> and
+            <span class="highlight">Node.js/Express</span> ecosystems. I
+            specialize in building robust, scalable backend systems that power
+            modern web applications.
+          </p>
+          <p class="fade-in delay-1">
+            My experience spans across developing RESTful APIs, designing
+            database schemas, implementing authentication systems, and
+            optimizing application performance. I follow
+            <span class="highlight">clean architecture principles</span> and
+            best practices to write maintainable, testable, and efficient code.
+          </p>
+          <p class="fade-in delay-2">
+            Whether it's a monolithic application with Spring Boot or a
+            microservices architecture with Node.js, I focus on creating
+            solutions that are not just functional but also secure, scalable,
+            and production-ready.
+          </p>
+          <div class="hero-btns fade-in delay-3">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Start a Conversation
+            </a>
+            <a
+              href="https://linkedin.com/in/dhiraj-kumar-roy"
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              <i class="fab fa-linkedin"></i> Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="about-visual fade-in delay-2">
+          <div class="code-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dot red"></div>
+              <div class="terminal-dot yellow"></div>
+              <div class="terminal-dot green"></div>
+              <span class="code-font">dhiraj@backend:~</span>
+            </div>
+            <div class="terminal-line">
+              <span class="prompt">$</span>
+              <span class="command"> whoami</span>
+            </div>
+            <div class="terminal-line">
+              <span class="output"
+                >Backend Engineer - Java | Spring Boot | Node.js</span
+              >
+            </div>
+            <div class="terminal-line">
+              <span class="prompt">$</span>
+              <span class="command"> find skills --type=backend</span>
+            </div>
+            <div class="terminal-line">
+              <span class="output">• RESTful API Development</span>
+            </div>
+            <div class="terminal-line">
+              <span class="output">• Database Design & Optimization</span>
+            </div>
+            <div class="terminal-line">
+              <span class="output">• Authentication & Authorization</span>
+            </div>
+            <div class="terminal-line">
+              <span class="output">• Microservices Architecture</span>
+            </div>
+            <div class="terminal-line">
+              <span class="prompt">$</span>
+              <span class="command">
+                <span id="typing-text"></span
+                ><span class="typing-cursor"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container">
+      <h2 class="fade-in">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <!-- Email Card - Clickable -->
+          <a
+            href="mailto:dheerajkumar.ara1111@gmail.com"
+            class="contact-card fade-in"
+          >
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-card-content">
+              <h4>Email</h4>
+              <p>dheerajkumar.ara1111@gmail.com</p>
+              <div class="contact-action">
+                <span>Click to send email</span>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card - Clickable -->
+          <a
+            href="https://linkedin.com/in/dhiraj-kumar-roy"
+            target="_blank"
+            class="contact-card fade-in delay-1"
+          >
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-card-content">
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/dhiraj-kumar-roy</p>
+              <div class="contact-action">
+                <span>Click to connect</span>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- GitHub Card - Clickable -->
+          <a
+            href="https://github.com/dhirajkumarroy"
+            target="_blank"
+            class="contact-card fade-in delay-2"
+          >
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-card-content">
+              <h4>GitHub</h4>
+              <p>github.com/dhirajkumarroy</p>
+              <div class="contact-action">
+                <span>Click to view projects</span>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="contact-form fade-in delay-3">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="Your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                class="form-input"
+                placeholder="Project discussion, job opportunity, etc."
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                id="message"
+                class="form-textarea"
+                placeholder="Tell me about your project or opportunity..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a
+              href="https://github.com/dhirajkumarroy"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/dhiraj-kumar-roy"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:dheerajkumar.ara1111@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            © 2024 Dhiraj Kumar • Backend Engineer • Java Spring Boot &
+            Node.js Expert
+          </p>
+          <p style="margin-top: 10px; font-size: 0.8rem">
+            Specializing in REST APIs, Microservices, and Database Design
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
